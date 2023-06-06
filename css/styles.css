@@ -365,6 +365,40 @@ body {
     margin-right: 15px;
 }
 
+.services {
+    padding: 150px 0;
+}
+
+.service__title,
+.services__description {
+    color: #000;
+    text-align: center;
+}
+
+.service__title {
+    margin-bottom: 66px;
+}
+
+.services__description {
+    margin: 0 auto;
+    max-width: 172px;
+    text-transform: uppercase;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.services__item {
+}
+.services__icon {
+    margin: 0 auto 30px;
+}
+
 @media screen and (max-width: 1280px) {
     .grid {
         display: grid;
