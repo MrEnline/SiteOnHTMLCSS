@@ -48,6 +48,9 @@ body {
     font-weight: 500;
     font-size: 36px;
     text-transform: uppercase;
+
+    font-style: normal;
+    line-height: 53px;
 }
 
 .text_h3 {
@@ -60,6 +63,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 21px;
+    letter-spacing: 0.02em;
 }
 
 .text_p {
@@ -369,14 +373,14 @@ body {
     padding: 150px 0;
 }
 
-.service__title,
+.services__title,
 .services__description {
     color: #000;
     text-align: center;
 }
 
-.service__title {
-    margin-bottom: 66px;
+.services__title {
+    margin-bottom: 55px;
 }
 
 .services__description {
@@ -394,9 +398,80 @@ body {
 }
 
 .services__item {
+    padding: 59px 0;
+    background-color: #f7f7f7;
+    width: 350px;
 }
+
 .services__icon {
-    margin: 0 auto 30px;
+    margin: 0 auto 21px;
+}
+
+.portfolio {
+}
+
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 0;
+}
+.portfolio__item {
+}
+
+.portfolio__img {
+}
+
+.question {
+    padding: 150px 0;
+}
+
+.question__title {
+    margin-bottom: 50px;
+}
+
+.question__item {
+}
+
+.question__item_h3 {
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+}
+
+.question__item_close {
+}
+
+.text_p {
+    margin-bottom: 40px;
+    color: var(--gray-color);
+    max-width: 730px;
+}
+
+.question__item_p {
+}
+
+.question__item_open {
+}
+
+.question__item_h3.question__item_open::before,
+.question__item_h3.question__item_close::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/arrow-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 15px;
+}
+
+.question__item_h3.question__item_open::before {
+    transform: rotate(-90deg);
+}
+
+.question__item_close + .question__item_p {
+    display: none;
 }
 
 @media screen and (max-width: 1280px) {
@@ -418,11 +493,30 @@ body {
     .request {
         padding: 0 15px;
     }
+
+    .services {
+        padding: 150px 15px;
+    }
+
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    .services__item {
+        width: 100%;
+    }
+
+    .portfolio__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 768px) {
     .info {
         position: relative;
+        padding: 30px 0;
     }
 
     .about {
@@ -452,5 +546,20 @@ body {
 
     .request__items {
         flex-wrap: wrap;
+    }
+
+    .services__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .title {
+        font-size: 46px;
+        line-height: 64px;
     }
 }
