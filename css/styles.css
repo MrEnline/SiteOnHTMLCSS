@@ -26,7 +26,7 @@ img {
 
 body {
     margin: 0;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: 400;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .text_h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: 500;
     font-size: 36px;
     text-transform: uppercase;
@@ -54,25 +54,25 @@ body {
 }
 
 .text_h3 {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: 500;
     font-size: 24px;
 }
 
 .text_h4 {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: 500;
     font-size: 21px;
     letter-spacing: 0.02em;
 }
 
 .text_p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
 }
 
 .text-p-previews {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 21px;
 }
@@ -358,7 +358,7 @@ body {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.05em;
@@ -427,6 +427,7 @@ body {
 }
 
 .question__title {
+    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -436,10 +437,11 @@ body {
 .question__item_h3 {
     text-transform: uppercase;
     color: var(--accent-color);
-    margin-bottom: 30px;
+    margin-bottom: 23px;
 }
 
 .question__item_close {
+    margin-bottom: 31px;
 }
 
 .text_p {
@@ -456,14 +458,14 @@ body {
 
 .question__item_h3.question__item_open::before,
 .question__item_h3.question__item_close::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 15px;
     height: 15px;
     background-image: url(../img/arrow-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 15px;
+    margin-right: 14px;
 }
 
 .question__item_h3.question__item_open::before {
@@ -510,6 +512,10 @@ body {
 
     .portfolio__grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .question {
+        padding: 150px 15px 110px;
     }
 }
 
