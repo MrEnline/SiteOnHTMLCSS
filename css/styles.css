@@ -26,7 +26,7 @@ img {
 
 body {
     margin: 0;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .text_h2 {
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 36px;
     text-transform: uppercase;
@@ -54,25 +54,25 @@ body {
 }
 
 .text_h3 {
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 24px;
 }
 
 .text_h4 {
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 21px;
     letter-spacing: 0.02em;
 }
 
 .text_p {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
 .text-p-previews {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 21px;
 }
@@ -358,7 +358,7 @@ body {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.05em;
@@ -423,7 +423,7 @@ body {
 }
 
 .question {
-    padding: 150px 0;
+    padding: 150px 0 113px 0;
 }
 
 .question__title {
@@ -458,7 +458,7 @@ body {
 
 .question__item_h3.question__item_open::before,
 .question__item_h3.question__item_close::before {
-    content: "";
+    content: '';
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -474,6 +474,37 @@ body {
 
 .question__item_close + .question__item_p {
     display: none;
+}
+
+.partners {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: var(--dark-color);
+}
+
+.text_h2 {
+}
+
+.partners_h2 {
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.partners__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.partners__item {
+    margin-right: 40px;
+    margin-bottom: 20px;
+    max-width: 170px;
+}
+
+.partners__item:nth-child(5n) {
+    margin-right: 0;
 }
 
 @media screen and (max-width: 1280px) {
@@ -516,6 +547,14 @@ body {
 
     .question {
         padding: 150px 15px 110px;
+    }
+
+    .partners__items {
+        justify-content: center;
+    }
+
+    .partners__item:nth-child(5n) {
+        margin-right: 40px;
     }
 }
 
@@ -561,11 +600,20 @@ body {
     .portfolio__grid {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .partners__item {
+        margin: 0 10px;
+    }
 }
 
 @media screen and (max-width: 380px) {
     .title {
         font-size: 46px;
         line-height: 64px;
+    }
+
+    .partners__item:nth-child(5n) {
+        margin-right: 0px;
+        margin-left: 0px;
     }
 }
