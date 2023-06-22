@@ -326,14 +326,17 @@ body {
     padding-top: 30px;
     padding-bottom: 40px;
 }
+
 .request__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .request__description {
     color: var(--white-color);
 }
+
 .request__title {
     font-style: normal;
     font-weight: 700;
@@ -343,6 +346,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 7px;
 }
+
 .request__slogan {
     font-style: normal;
     font-weight: 700;
@@ -350,8 +354,10 @@ body {
     letter-spacing: 0.02em;
     text-transform: uppercase;
 }
+
 .request__button {
 }
+
 .button {
     border: none;
     background: #ffffff;
@@ -365,12 +371,13 @@ body {
     padding: 14px 30px;
     margin-top: 20px;
 }
+
 .button__icon {
     margin-right: 15px;
 }
 
 .services {
-    padding: 150px 0;
+    padding: 149px 0;
 }
 
 .services__title,
@@ -404,7 +411,7 @@ body {
 }
 
 .services__icon {
-    margin: 0 auto 21px;
+    margin: 0 auto 23px;
 }
 
 .portfolio {
@@ -416,6 +423,7 @@ body {
     justify-items: center;
     gap: 0;
 }
+
 .portfolio__item {
 }
 
@@ -423,12 +431,12 @@ body {
 }
 
 .question {
-    padding: 150px 0 113px 0;
+    padding: 150px 0 108px 0;
 }
 
 .question__title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 }
 
 .question__item {
@@ -441,11 +449,11 @@ body {
 }
 
 .question__item_close {
-    margin-bottom: 31px;
+    margin-bottom: 34px;
 }
 
 .text_p {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     color: var(--gray-color);
     max-width: 730px;
 }
@@ -482,9 +490,6 @@ body {
     background-color: var(--dark-color);
 }
 
-.text_h2 {
-}
-
 .partners_h2 {
     color: var(--white-color);
     text-align: center;
@@ -505,6 +510,50 @@ body {
 
 .partners__item:nth-child(5n) {
     margin-right: 0;
+}
+
+.reviews {
+    padding: 150px 0 144px 0;
+}
+
+.reviews_h2 {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.reviews__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.reviews__item {
+}
+
+.reviews__card {
+    /* background-color: #f7f7f7; */
+    background-color: yellow;
+    padding: 22px 22px 33px 31px;
+    margin-bottom: 30px;
+}
+
+.reviews__quotes {
+    font-size: 96px;
+    color: var(--accent-color);
+    line-height: 1;
+    margin-bottom: -40px;
+}
+
+.reviews_p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.reviews__author-accent {
+    color: var(--accent-color);
 }
 
 @media screen and (max-width: 1280px) {
@@ -556,6 +605,14 @@ body {
     .partners__item:nth-child(5n) {
         margin-right: 40px;
     }
+
+    .reviews {
+        padding: 150px 15px 144px 15px;
+    }
+
+    .reviews__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -603,6 +660,10 @@ body {
 
     .partners__item {
         margin: 0 10px;
+    }
+
+    .reviews__grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
