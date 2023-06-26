@@ -458,7 +458,7 @@ body {
     max-width: 730px;
 }
 
-.question__item_p {
+/* .question__item_p {
 }
 
 .question__item_open {
@@ -482,7 +482,7 @@ body {
 
 .question__item_close + .question__item_p {
     display: none;
-}
+} */
 
 .partners {
     padding-top: 100px;
@@ -586,6 +586,11 @@ body {
     text-transform: uppercase;
 }
 
+.contacts_h3 a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .contacts_h3-grey {
     color: var(--gray-color);
     margin-bottom: 18px;
@@ -620,8 +625,8 @@ body {
     }
 
     .header__title {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .about {
