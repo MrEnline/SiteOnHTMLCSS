@@ -7,19 +7,35 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" />
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
         <link rel="stylesheet" href="css/styles.css" />
         <title>Document</title>
     </head>
     <body>
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <a href="#!"><i class="material-icons">home</i>Главная</a>
+                <a href="#!"><i class="material-icons">people</i>О нас</a>
+                <a href="#!"><i class="material-icons">grade</i>Услуги</a>
+                <a href="#!"><i class="material-icons">phone</i>Контакты</a>
+            </li>
+            <li><div class="divider"></div></li>
+            <a href="#!"><i class="sidenav-close">close</i>Закрыть</a>
+        </ul>
+        <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
         <header class="header">
             <div class="container">
                 <div class="header__title">
                     <img src="img/logo.svg" class="logo" alt="logo" />
-                    <button class="burger">
+                    <a data-target="slide-out" class="burger sidenav-trigger">
                         <span class="burger__line"></span>
                         <span class="burger__line"></span>
                         <span class="burger__line"></span>
-                    </button>
+                    </a>
                 </div>
                 <h1 class="title">РЕАЛИЗУЕМ КРУПНЕЙШИЕ ПРОЕКТЫ В РОССИИ</h1>
                 <h4 class="description">стадионы, газопроводы, мосты, дамбы</h4>
@@ -104,6 +120,17 @@
             </div>
         </section> -->
 
+        <!-- Modal Structure -->
+        <div id="modalView" class="modal">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>
+                    Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Меня океана она последний первую. Проектах
+                    знаках путь переулка эта решила составитель страна текста лучше, залетают, образ гор раз ее?
+                </p>
+            </div>
+        </div>
+
         <!-- чужая реализация -->
         <section class="request">
             <div class="container">
@@ -113,10 +140,10 @@
                         <h5 class="request__slogan">РЕАЛИЗУЕМ САМЫЕ СМЕЛЫЕ РЕШЕНИЯ В РОССИИ!</h5>
                     </div>
                     <div class="request__button">
-                        <button class="button">
+                        <a href="#modalView" class="button modal-trigger">
                             <img class="button__icon" src="img/mail.svg" alt="mail" />
                             ВАШ ЗАПРОС
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -157,28 +184,28 @@
         <section class="portfolio">
             <div class="portfolio__grid">
                 <div class="portfolio__item">
-                    <img class="portfolio__img" src="/img/portfolio-item.jpg" alt="portfolio item" />
+                    <img class="portfolio__img materialboxed" src="/img/portfolio-item.jpg" alt="portfolio item" />
                 </div>
                 <div class="portfolio__item">
-                    <img class="portfolio__img" src="/img/portfolio-item.jpg" alt="portfolio item" />
+                    <img class="portfolio__img materialboxed" src="/img/portfolio-item.jpg" alt="portfolio item" />
                 </div>
                 <div class="portfolio__item">
-                    <img class="portfolio__img" src="/img/portfolio-item.jpg" alt="portfolio item" />
+                    <img class="portfolio__img materialboxed" src="/img/portfolio-item.jpg" alt="portfolio item" />
                 </div>
                 <div class="portfolio__item">
-                    <img class="portfolio__img" src="/img/portfolio-item.jpg" alt="portfolio item" />
+                    <img class="portfolio__img materialboxed" src="/img/portfolio-item.jpg" alt="portfolio item" />
                 </div>
                 <div class="portfolio__item">
-                    <img class="portfolio__img" src="/img/portfolio-item.jpg" alt="portfolio item" />
+                    <img class="portfolio__img materialboxed" src="/img/portfolio-item.jpg" alt="portfolio item" />
                 </div>
                 <div class="portfolio__item">
-                    <img class="portfolio__img" src="/img/portfolio-item.jpg" alt="portfolio item" />
+                    <img class="portfolio__img materialboxed" src="/img/portfolio-item.jpg" alt="portfolio item" />
                 </div>
                 <div class="portfolio__item">
-                    <img class="portfolio__img" src="/img/portfolio-item.jpg" alt="portfolio item" />
+                    <img class="portfolio__img materialboxed" src="/img/portfolio-item.jpg" alt="portfolio item" />
                 </div>
                 <div class="portfolio__item">
-                    <img class="portfolio__img" src="/img/portfolio-item.jpg" alt="portfolio item" />
+                    <img class="portfolio__img materialboxed" src="/img/portfolio-item.jpg" alt="portfolio item" />
                 </div>
             </div>
         </section>
@@ -337,5 +364,9 @@
                 </div>
             </div>
         </footer>
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
